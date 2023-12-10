@@ -1,9 +1,5 @@
 <?php
 $start_time = microtime(true);
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
-
-$start = microtime(true);
 $input = array_map('trim',file('inputs/day5list.txt'));
 $seeds = $input[0];
 $seeds = explode(' ',str_replace('seeds: ','',$seeds));
